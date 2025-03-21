@@ -49,7 +49,7 @@ def factorial_template_view(request, n):
     produs = 1 if n < 2 else reduce(lambda x, y: x * y, range(1, n+1))
 
     lista_factorial = [] #(6!, 720), (5!, 120), (4!, 24)
-    for i in range(n, -1, -1):
+    for i in range(n-1, -1, -1):
         lista_factorial.append((i, calculeaza_factorial(i)))
 
 
